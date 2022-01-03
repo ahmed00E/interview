@@ -1,0 +1,210 @@
+body {
+  background-color:  DarkSlateGray;
+  /* color: white; */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+ 
+
+.movie-grid {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+/* NAV OPTIONS */
+
+.nav-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-checkbox {
+  display: inline-block;
+  margin: 24px 8px;
+  padding: 4px 4px;
+  width: 16pxx;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgb(143, 143, 143);
+  background-color: rgba(92, 92, 92, 0.803);
+}
+
+/* FILTERS */
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+}
+.filter-checkbox {
+  display: inline-block;
+  margin: 24px 8px;
+  padding: 4px 4px;
+  border-radius: 6px;
+  border: 1px solid rgb(14, 11, 11);
+  background-color: rgba(92, 92, 92, 0.322);
+}
+
+.checked {
+  border: 1px solid rgb(85, 172, 58);
+  background-color: rgba(85, 172, 58, 0.308);
+}
+
+/* Pagination */
+
+ .items-per-page {
+  display: flex;
+} 
+
+/* page navigation buttons */
+ button:active {
+  outline: none;
+  border: none;
+} 
+ button:focus {
+  outline: none;
+  border: none;
+} 
+
+ .page-button {
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(92, 92, 92, 0.322);
+  box-shadow: 0px 0px 2px 1px rgb(75, 75, 75), 4px 6px 6px rgb(8, 8, 8);
+  font-size: 2em;
+  padding-right: 10px;
+  text-align: center;
+} 
+
+.page-button:hover {
+   border-color: black; 
+   color: black; 
+   background-color: rgb(161, 161, 161);
+} 
+
+.decrement-page {
+  left: 30px;
+} 
+ .increment-page {
+  right: 30px;
+  transform: rotate(180deg);
+} 
+
+/* MOVIE CARD */
+
+ .movie-card {
+  position: relative;
+  flex: 1 0 15rem;
+  margin: 12px;
+  padding: 12px;
+  background-color: #167168;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px 1px rgb(75, 75, 75), 4px 6px 6px rgb(8, 8, 8);
+} 
+
+.movie-card-fill {
+  flex: 1 0 15rem;
+  margin: 12px;
+  padding: 12px;
+} 
+
+.category {
+  display: inline-block;
+  
+   
+   
+  
+} 
+
+/* REMOVE BUTTON */
+
+ .fa {
+ position: absolute;
+  /* left: 10.5em; */
+  top: 2px  ;
+  right: 6px;
+  text-align: center;
+  padding: 6px; 
+  width: 40px;
+  border-radius: 5px;
+  border: 1px solid hsl(5, 45%, 22%);
+  color: white;
+  
+} 
+
+.remove-button:hover {
+  border: 1px solid rgb(255, 255, 255);
+} 
+
+/* LIKE / DISLIKE */
+
+ .like-dislike {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+
+ 
+
+.like-button {
+  background-color: rgba(106, 198, 115, 0.486);
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+ 
+  
+ .like-button:disabled {
+  cursor: auto;
+} 
+
+@keyframes grow {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+} 
+
+/* NO MOVIES PAGE */
+
+.no-movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.resfresh-button {
+  font-size: 2em;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 6px;
+  color: white;
+  background-color: rgba(106, 198, 115, 0.87);
+}
+
+.fa{
+  color: rgb(211, 8, 8);
+
+}
+h1{
+  text-align: center;
+ 
+}
